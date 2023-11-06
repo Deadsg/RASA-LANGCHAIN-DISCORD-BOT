@@ -1,0 +1,52 @@
+version: "3.1"
+
+intents:
+  - greet
+  - mood_great
+  - mood_unhappy
+  - affirm
+  - deny
+  - goodbye
+  - command
+  - query
+  - bot_challenge   
+
+entities: []
+
+responses:
+  utter_greet:
+    - text: "Hello!"
+  utter_happy:
+    - text: "I'm glad to hear that you're feeling great!"
+  utter_cheer_up:
+    - text: "I'm sorry you're feeling this way. Maybe a joke will help?"
+  utter_did_that_help:
+    - text: "Did that help cheer you up?"
+  utter_goodbye:
+    - text: "Goodbye!"
+  utter_None:
+    - text: "I'm not sure what you mean. Can you please rephrase?"
+
+actions:
+  - action_train_model
+  - action_execute_command
+  - action_custom_chat
+  - action_provide_information
+
+templates:
+  utter_greet:
+    - text: "Hello!"
+  utter_happy:
+    - text: "I'm glad to hear that you're feeling great!"
+  utter_cheer_up:
+    - text: "I'm sorry you're feeling this way. Maybe a joke will help?"
+  utter_did_that_help:
+    - text: "Did that help cheer you up?"
+  utter_goodbye:
+    - text: "Goodbye!"
+  utter_None:
+    - text: "I'm not sure what you mean. Can you please rephrase?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
