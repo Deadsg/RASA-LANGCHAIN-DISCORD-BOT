@@ -11,7 +11,7 @@ import openai
 
 llm = OpenAI(openai_api_key="")
 
-interpreter = Interpreter.load("C:/Users/Mayra/Documents/AGI/venv/models/nlu-20231104-133005-tall-clause.tar")
+interpreter = Interpreter.load("")
 
 response = interpreter.parse("Execute this command.")
 
